@@ -1,0 +1,31 @@
+<html>
+    <head>   
+    <link href="registration.css"
+       rel="stylesheet"
+       type="text/css"></link>
+    </head> 
+    <body>
+
+    <div id="header">
+        <h1>Let's get registered!</h1>
+    </div>
+       
+    <form onsubmit="return handleSubmit(this)" class = "form">
+
+        First Name: <input type="text" id = "firstname"><br>
+        Last Name: <input type="text" id = "lastname"><br>
+        D.O.B: <input type="date" id = "bday"><br>
+        Age: <input type="number" id= "age"><br>
+        Gender: <br>
+        <input type="radio" id = "gender" name="gender" value="male"> Male<br>
+        <input type="radio" id = "gender" name="gender" value="female"> Female<br>
+        <input type="radio" id = "gender" name="gender" value="other"> Other<br>
+        E-mail: <input type="email" id = "email"><br>
+        
+        <input type ="submit">
+        </form>   
+
+         <script src="registration.js"></script>
+    
+    </body>
+</html>

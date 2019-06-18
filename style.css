@@ -1,0 +1,19 @@
+body {
+    background-color: pink;
+  }
+
+button {
+    color: white;
+    border: white 2px solid;
+    background-color: blueviolet;
+}
+
+#inputa {
+    background-color: lightgrey;
+    border: white 2px solid;
+}
+
+#inputb {
+    background-color: lightgrey;
+    border: white 2px solid;
+}

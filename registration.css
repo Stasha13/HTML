@@ -1,0 +1,22 @@
+body {
+    background-image:url("https://www.freevector.com/uploads/vector/preview/30358/Colorful-Geometric-Background.jpg");
+  }
+
+  input {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    background: rgba(212, 198, 198, 0.986);
+    border:1px solid white;
+    width: 300px;
+}
+
+.form {
+    width: 300px;
+    clear: both;
+}
+.form > input {
+    display: inline-block;
+    min-width: 100px;
+}

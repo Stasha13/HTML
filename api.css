@@ -1,0 +1,18 @@
+body {
+    background-image:url("https://2static.fjcdn.com/large/pictures/33/a8/33a8e7_5912420.jpg");
+    
+}
+
+.memberWrapper{
+
+margin: 2em;
+padding: 0.5em;
+border: 5px solid lightgrey;
+border-radius: 0.5em;
+border-color: darkblue;
+color: darkolivegreen;
+}
+.memberWrapper p {
+font-size: 20px;
+font-family: monospace
+}

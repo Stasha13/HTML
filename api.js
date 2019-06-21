@@ -23,7 +23,7 @@ function displaySuperheroData(data){
 
     data.members.forEach(item => membersContainer.append(generateMember(item)));
 
-    function generateMember(member){
+    function generateMember({member}){
 
         const memberWrapper=document.createElement('div');
         memberWrapper.className='memberWrapper';

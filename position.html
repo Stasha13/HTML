@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body onmousemove="doit()">
+        <span id='x' style ='position:absolute;top:0;left:0'>
+            Nationwide
+        </span>
+
+        <script>
+        function doit(){
+            var ref =document.getElementById('x');
+            ref.style.top=window.event.clientY;
+            ref.style.left=window.event.clientX;
+        } 
+        </script>
+    </body>
+</html> 

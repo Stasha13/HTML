@@ -1,8 +1,50 @@
 <html>
-    <head></head>
-    <body onclick="doSomething()">
- 
-    <script src = "interval.js"></script>
+<script>
+class box{
+    static color ='black';
+
+    createBox (top,left,color){
+        var b = document.createElement("div");
+        b.style.position='absolute';
+        b.style.top = top;
+        b.style.left = left;
+        b.style.backgroundColor= color;
+        b.style.width = '100px';
+        b.style.height = '100px';
+        b.addEventListener ("mouseenter",function(){
+            box.color=color;
+        });
+        document.body.appendChild(b);
+    }
+      
+}
+
+function draw(){
+    //alert( "..."+document.getElementById("d").style.fontSize);
+    if (event.ctrlKey){
+       console.log("..."+ document.getElementById("d").style.fontSize);
+      //  document.getElementById("d").style.fontSize=parseInt(document.getElementById("d").style.fontSize)+1;
+
+    }
+    document.getElementById("d").style.top=event.clientY;
+    document.getElementById("d").style.left=event.clientX;
+    document.getElementById("d").style.color=box.color;
+
+}
+
+function pageLoad(){
+   // alert("hello");
+    var b = new box();
+    b.createBox(10,1,'green');
+    b.createBox(10,700,'blue');
+    b.createBox(400,10,'red');
+}
+
+    </script>
+
+
+    <body onload="pageLoad()" onmousemove="draw()">
+        <span id= "d" style = "position:absolute;top:0;left:0">*</span>
         
     </body>
 </html> 

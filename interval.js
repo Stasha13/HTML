@@ -12,15 +12,15 @@ class fire{
     var timer = window.setInterval(
         function(){
          ref.style.top = parseInt(ref.style.top)-10;
-         if (parseInt(ref.style.top<=10)){
+         if (parseInt(ref.style.top)<=10){
               window.clearInterval(timer);
          }
-        }, 200);
+        }, 50);
     }
 }
 
 function doSomething(){
     var X = event.clientX;
     var Y = event.clientY;
-    var ref = new fire (X,Y,'Red');
+    var ref = new fire (Y,X,'Red');
 }
